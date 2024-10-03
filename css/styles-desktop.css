@@ -37,6 +37,10 @@
         grid-row: 2/3;
     }
     
+    .menu-bar {
+        display: none;
+    }
+    
     .nav-bar {
         display: flex;
         flex-direction: row;
