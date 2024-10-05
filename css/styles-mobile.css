@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -14,13 +15,17 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(252, 255, 252);
+    box-shadow: 0 4px 2px -2px #0000003b;
 }
 
+/* HEADER */
 .start-header {
     display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+
     justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 15rem);
+    max-width: 100%;
 }
 
 .start-header__img {
@@ -28,32 +33,37 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+ 
+    overflow: hidden;
 }
 
 .header-img {
-    overflow: hidden;
     object-fit: fill;
-    cursor: pointer;
+    min-height: 100%;
+    min-width: 100%;
 }
-
 
 .start-header__img--left {
-    grid-column: 1/3;
-    grid-row: 1/3;
+    grid-column: 1/ span 12;
+    grid-row: 1/ span 3;
 }
 
-.start-header__img-right--brown {
+.start-header__img-right {
     background-color: rgb(158, 109, 82);
-    grid-column: 1/2;
-    grid-row: 3/4;
+    grid-column: auto / span 6;
+    grid-row: auto /span 1;
+}
+
+.start-header__img-right img {
+   max-width: 60%;
 }
 
 .start-header__img-right--green {
     background-color: rgb(10, 132, 110);
-    grid-column: 2/3;
-    grid-row: 3/4;
+    grid-column: auto / span 6;
+    grid-row: auto /span 1;
 }
 
 .company-logo {
@@ -62,6 +72,9 @@ body {
     top: 50%;
     transform: translateY(-50%) translateX(-50%);
 }
+
+
+/* NAVIGATION */
 
 .menu-bar {
     position: absolute;
@@ -75,37 +88,212 @@ body {
     display: none;
 }
 
-.nav-bar__link {
-    font-family: "Maven Pro", sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(5, 86, 71);
-    font-optical-sizing: auto;
-    font-weight: 550;
-    font-style: normal;
-}
+
+/* MAIN */
 
 .main {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-auto-rows: auto;
-    min-height: 10rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1rem;
+
+    place-items: center;
+    padding: 1rem;
 }
 
-.main__first-article__heading {
+/* CULTIVATION TIP */
+.main * {
+    text-align: center;
+}
+
+.main__heading1 {
+    grid-column: 1/ span 12;
+    grid-row: 1/ span 1;
+
     font-family: "Maven Pro", sans-serif;
     font-size: 1.8rem;
     font-weight: 500;
     color: rgb(10, 132, 110);
-    text-align: center;
-    grid-column: 1 / span 12;
+}
+
+.main__heading2--section-one {
+    grid-column: 1/ span 12;
+    grid-row: 3 /span 1;
+
+}
+
+.main__span--section-one{
+    grid-column: 2/ span 10;
+    grid-row: 4 / span 2;
+}
+
+.button {
+    background-color: rgb(10, 132, 110);
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    color: white;
+    min-width: 5rem;
+    padding: 0.5rem;
+    box-shadow: 0 4px 2px -2px #0000003b;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.button--cultivation-tip {
+    grid-column: 5/ span 4;
+    grid-row: 6 /span 1;
+
+  
+}
+.main__circle-image--section-one {
+    grid-column: 3/ span 8;
+    grid-row: auto/ span 4;
+}
+
+.main__circle-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(10, 132, 110);
+    border-radius: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main-demarcation {
+    grid-column: 1/ span 12;
+    grid-row: auto / span 1;
+}
+
+
+/* CULTIVATION PLANS */
+.heading-cultivation-plans {
+    grid-column: 1 /span 12;
+    grid-row: auto /span 1;
+}
+
+.card-vegetables {
+    grid-column: auto /span 6;
+    grid-row: auto /span 1;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px 2px #00000049;
+
+}
+
+.card-vegetables__img {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+
+}
+
+.card-vegetables__img img {
+    max-width: 100%;
+    object-fit: fill;
+}
+
+.card-vegetables__info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: flex-start;   
+    gap: 0.5rem;
+    padding: 0.2rem;
+}
+.card-vegetables__vegetable{
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.card-vegetables__date {
+    font-weight: 700;
+    font-size: 0.7rem;
+    justify-self: flex-end;
+}
+.card-vegetables__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+.card-vegetables__remove-button {
+    display: none;
+}
+
+.card-vegetables__remove-icon {
+    max-width: 1rem;
+    max-height: 1rem;
+    justify-self: flex-end;
+    cursor: pointer;
+}
+
+.button--show-more {
+    grid-column: 1/ span 12;
+    grid-row: auto/ span 1;
+    cursor: pointer;
+}
+
+/* SECTION THREE EARLIER CULTIVATION */
+.main__heading2--section-three {
+    grid-column: 1/ span 12;
+    grid-row: auto /span 1;
+
+}
+
+.main__span--section-three{
+    grid-column: 2/ span 10;
+    grid-row: auto / span 2;
+}
+
+.main__circle-image--section-three {
+    grid-column: 3/ span 8;
+    grid-row: auto/ span 4;
+}
+/* FOOTER */
+.footer__start {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    min-width: 100%;
+    color: white;
+}
+
+.footer__start__image--desktop {
+    display: none;
+}
+
+.footer__start__image--mobile {
+    grid-row: 1/ span 2;
+    grid-column: 1/ span 2;
+    min-width: 100%;
+}
+
+.footer__start__logo-container {
+    grid-row: 1/ span 1;
+    grid-column: 1/ span 2;
+}
+
+.footer__start__text-container {
+    grid-row: 2/ span 1;
+    grid-column: 1/ span 2;
+    background-color: rgba(0, 0, 0, 0.79);
+    min-width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     padding: 1rem;
 }
 
-.footer-start {
-    border: black 1px solid;
+.footer__start__text--big {
+    align-self: center;
 }
 
-
-/* overflow: hidden
-object-fit: cover */
