@@ -1,0 +1,13 @@
+@media (min-width:768px) {
+
+    .header--my-pages {
+    }
+
+    .header-img-mypages--mobile {
+        display: none;
+    }
+
+    .header-img-mypages--desktop {
+        display: block;
+    }
+}
