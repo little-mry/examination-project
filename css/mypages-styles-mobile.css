@@ -1,6 +1,38 @@
 .header--my-pages {
+    position: relative;
+    overflow: hidden;
 }
 
+.company-logo--my-pages {
+    max-width: 60%;
+}
+
+.header-img-mypages--mobile {
+    object-fit: contain;
+}
 .header-img-mypages--desktop {
     display: none;
+}
+
+.add-plant__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+} 
+
+.add-plant__form {
+    min-width: 100%;
+    padding: 1rem;
+}
+
+.add-plant__form__input {
+    border: none;
+    padding: .5rem;
+    display: flex;
+}
+
+.button--add-plant {
+    margin-left: auto;
+    margin-right: auto;
 }

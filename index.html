@@ -15,16 +15,16 @@
 <body>
     <div class="site-wrapper">
 <!-- HEADER -->
-        <header class="header start-header" id="header">
-            <section class="start-header__img start-header__img--left">
+        <header class="header header-start" id="header">
+            <section class="header-start__img header-start__img--left">
                 <img class="header-img" src="img/hand-square.png" alt="">
                 <img class="company-logo" src="img/Logo.svg" alt="">
                 <img class="menu-bar" src="img/Vector (Stroke).png" alt="">
             </section>
-            <section class="start-header__img start-header__img-right">
+            <section class="header-start__img header-start__img--right">
                 <img src="img/seedling.svg" alt="seedling-icon">
             </section>
-            <section class="start-header__img start-header__img-right start-header__img-right--green">
+            <section class="header-start__img header-start__img--right header-start__img-right--green">
                 <img  src="img/dig.svg" alt="digging-icon">
             </section>
         </header>
@@ -32,133 +32,138 @@
             <a href="" class="nav-bar__link">Planer</a>
             <a href="" class="nav-bar__link">Historik</a>
             <a href="" class="nav-bar__link">Tips</a>
-            <a href="" class="nav-bar__link">Logga in</a>
+            <a href="./logged-in.html" class="nav-bar__link">Logga in</a>
         </nav>
 <!-- HEADER -->
 
 <!-- MAIN --> 
-<!-- SECTION ONE -->
         <main class="main main--start">
             <h1 class="main__heading1">PLANNED PLANTHOOD</h1>
-            <h2 class="main__heading2 main__heading2--section-one">Säsong att så</h2>
-            <span class="main__span main__span--section-one">
-                Våren är äntligen här i kollektivet! <br> 
-                Lorem ipsum dolor sit amet consectetur. 
-                Sit venenatis arcu nunc consectetur neque. 
-                Vel amet netus amet eu elit.
-            </span>
-            <section class="main__circle-image main__circle-image--section-one">
-                    <img class="seed-img" src="img\Vectorseedpackage.svg" alt="">
-            </section>
             
-            <button class="button button--cultivation-tip">SÅ-TIPS</button>
-            
+            <article class="main__info-box main__info-box--one">
+                <section class="main__info-box__text">
+                    <h2 class="main__heading2">Säsong att så</h2>
+                    <span class="main__span main__part-one__span">
+                        Våren är äntligen här i kollektivet! <br> 
+                        Lorem ipsum dolor sit amet consectetur. 
+                        Sit venenatis arcu nunc consectetur neque. 
+                        Vel amet netus amet eu elit.
+                    </span>
+                    <button class="button">SÅ-TIPS</button>
+                </section>
+                <section class="main__circle-image main__circle-image--section-one">
+                        <img class="info-box__logo" src="img/Vectorseedpackage.svg" alt="">
+                </section>
+            </article>
             <img class="main-demarcation" src="img/Line 2.png" alt="line image">
 
-<!-- SECTION TWO -->
-            <h3 class="heading-cultivation-plans">Våra planerade planteringar:</h3>
-            <article class="card-vegetables">
-                <section class="card-vegetables__img">
-                    <img src="img/cucumber1.png" alt="Gurka">
-                    <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
+            <h3 class="heading__part-two">Våra planerade planteringar:</h3>
+            <article class="main__part-two">
+                <article class="card-vegetables">
+                    <section class="card-vegetables__img">
+                        <img src="img/cucumber1.png" alt="Gurka">
+                        <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
+                    </section>
+                    <section class="card-vegetables__info-container">
+                        <span class="card-vegetables__vegetable">Gurka</span>
+                        <span class="card-vegetables__date">15 april 2024</span>
+                        <span class="card-vegetables__name">Rico Coolio</span>
+                        <button class="card-vegetables__remove-button ">Ta bort</button>
+                        <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
+                    </section>
+                </article>
+
+                <article class="card-vegetables">
+                    <section class="card-vegetables__img">
+                        <img src="img/tomatoes2.png" alt="Tomater">
+                        <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
+                    </section>
+                    <section class="card-vegetables__info-container">
+                        <span class="card-vegetables__vegetable">Tomat</span>
+                        <span class="card-vegetables__date">1 april 2024</span>
+                        <span class="card-vegetables__name">Snus-Jocke</span>
+                        <button class="card-vegetables__remove-button">Ta bort</button>
+                        <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
+                    </section>
+                </article>
+
+                <article class="card-vegetables">
+                    <section class="card-vegetables__img">
+                        <img src="img/tomato1.png" alt="Tomater">
+                        <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
+                    </section>
+                    <section class="card-vegetables__info-container">
+                        <span class="card-vegetables__vegetable">Tomat</span>
+                        <span class="card-vegetables__date">1 april 2024</span>
+                        <span class="card-vegetables__name">Majvor & P-Å</span>
+                        <button class="card-vegetables__remove-button">Ta bort</button>
+                        <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
+                    </section>
+                </article>
+
+                <article class="card-vegetables">
+                    <section class="card-vegetables__img">
+                        <img src="img/peas1.png" alt="Ärtor">
+                        <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
+                    </section>
+                    <section class="card-vegetables__info-container">
+                        <span class="card-vegetables__vegetable">Sockerärtor</span>
+                        <span class="card-vegetables__date">15 april 2024</span>
+                        <span class="card-vegetables__name">Frippe</span>
+                        <button class="card-vegetables__remove-button">Ta bort</button>
+                        <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
+                    </section>
+                </article>
+
+                <article class="card-vegetables">
+                    <section class="card-vegetables__img">
+                        <img src="img/turnips1.png" alt="Majrovor">
+                        <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
+                    </section>
+                    <section class="card-vegetables__info-container">
+                        <span class="card-vegetables__vegetable">Majrova</span>
+                        <span class="card-vegetables__date">1 april 2024</span>
+                        <span class="card-vegetables__name">Emma på 4an</span>
+                        <button class="card-vegetables__remove-button">Ta bort</button>
+                        <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
+                    </section>
+                </article>
+
+                <article class="card-vegetables">
+                    <section class="card-vegetables__img">
+                        <img src="img/squash1.png" alt="">
+                        <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
+                    </section>
+                    <section class="card-vegetables__info-container">
+                        <span class="card-vegetables__vegetable">Squash</span>
+                        <span class="card-vegetables__date">15 april 2024</span>
+                        <span class="card-vegetables__name">Perra J</span>
+                        <button class="card-vegetables__remove-button">Ta bort</button>
+                        <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
+                    </section>
+                </article>
+
+                <button class="button button--show-more">VISA FLER</button>
+            </article>
+
+            <article class="main__info-box main__info-box--three">
+                <section class="main__info-box__text">
+                    <h2 class="main__heading2">Våra tidigare odlingar</h2>
+                    <span class="main__span main__part-one__span">
+                        Våren är äntligen här i kollektivet! <br> 
+                        Lorem ipsum dolor sit amet consectetur. 
+                        Sit venenatis arcu nunc consectetur neque. 
+                        Vel amet netus amet eu elit.
+                    </span>
+                    <button class="button">Planerade planteringar</button>
                 </section>
-                <section class="card-vegetables__info-container">
-                    <span class="card-vegetables__vegetable">Gurka</span>
-                    <span class="card-vegetables__date">15 april 2024</span>
-                    <span class="card-vegetables__name">Rico Coolio</span>
-                    <button class="card-vegetables__remove-button ">Ta bort</button>
-                    <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
+                <section class="main__circle-image main__circle-image--section-one">
+                        <img class="info-box__logo" src="img/plant.svg" alt="">
                 </section>
             </article>
 
-            <article class="card-vegetables">
-                <section class="card-vegetables__img">
-                    <img src="img/tomatoes2.png" alt="Tomater">
-                    <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
-                </section>
-                <section class="card-vegetables__info-container">
-                    <span class="card-vegetables__vegetable">Tomat</span>
-                    <span class="card-vegetables__date">1 april 2024</span>
-                    <span class="card-vegetables__name">Snus-Jocke</span>
-                    <button class="card-vegetables__remove-button">Ta bort</button>
-                    <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
-                </section>
-            </article>
-
-            <article class="card-vegetables">
-                <section class="card-vegetables__img">
-                    <img src="img/tomato1.png" alt="Tomater">
-                    <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
-                </section>
-                <section class="card-vegetables__info-container">
-                    <span class="card-vegetables__vegetable">Tomat</span>
-                    <span class="card-vegetables__date">1 april 2024</span>
-                    <span class="card-vegetables__name">Majvor & P-Å</span>
-                    <button class="card-vegetables__remove-button">Ta bort</button>
-                    <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
-                </section>
-            </article>
-
-            <article class="card-vegetables">
-                <section class="card-vegetables__img">
-                    <img src="img/peas1.png" alt="Ärtor">
-                    <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
-                </section>
-                <section class="card-vegetables__info-container">
-                    <span class="card-vegetables__vegetable">Sockerärtor</span>
-                    <span class="card-vegetables__date">15 april 2024</span>
-                    <span class="card-vegetables__name">Frippe</span>
-                    <button class="card-vegetables__remove-button">Ta bort</button>
-                    <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
-                </section>
-            </article>
-
-            <article class="card-vegetables">
-                <section class="card-vegetables__img">
-                    <img src="img/turnips1.png" alt="Majrovor">
-                    <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
-                </section>
-                <section class="card-vegetables__info-container">
-                    <span class="card-vegetables__vegetable">Majrova</span>
-                    <span class="card-vegetables__date">1 april 2024</span>
-                    <span class="card-vegetables__name">Emma på 4an</span>
-                    <button class="card-vegetables__remove-button">Ta bort</button>
-                    <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
-                </section>
-            </article>
-
-            <article class="card-vegetables">
-                <section class="card-vegetables__img">
-                    <img src="img/squash1.png" alt="">
-                    <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
-                </section>
-                <section class="card-vegetables__info-container">
-                    <span class="card-vegetables__vegetable">Squash</span>
-                    <span class="card-vegetables__date">15 april 2024</span>
-                    <span class="card-vegetables__name">Perra J</span>
-                    <button class="card-vegetables__remove-button">Ta bort</button>
-                    <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
-                </section>
-            </article>
-
-            <button class="button button--show-more">Visa fler</button>
-
-<!-- SECTION THREE-->
-            <h2 class="main__heading2 main__heading2--section-three">Våra tidigare odlingar</h2>
-            <span class="main__span main__span--section-three">
-                Våren är äntligen här i kollektivet! 
-                Lorem ipsum dolor sit amet consectetur. 
-                Sit venenatis arcu nunc consectetur neque. 
-                Vel amet netus amet eu elit.
-            </span>
-            <section class="main__circle-image main__circle-image--section-three">
-                    <img class="plant-img" src="img/plant.svg" alt="">
-            </section>
-
-            <button class="button button--cultivation-tip">SÅ-TIPS</button>
         </main>
 
-<!-- FOOTER -->
         <footer class="footer__start footer__start--mobile footer__start--desktop">
                 <img src="img/hand-picking-tall.png" alt="" class="footer__start__image--mobile">
             <div class="footer__start__image--desktop">
@@ -173,8 +178,8 @@
                 <span class="footer__start__text footer__start__text--big">Vi hörs!</span>
                 <span class="footer__start__text footer__start__text--small">mail@mail.se <img src="img/envelope.svg" alt=""></span>
             </div>
-            <a href="#header" class="link-top">Till toppen av sidan</a>
         </footer>
+        <a href="#header" class="link-top">Till toppen av sidan</a>
     </div>
 </body>
 </html>

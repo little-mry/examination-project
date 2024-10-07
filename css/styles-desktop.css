@@ -1,28 +1,27 @@
 @media (min-width:768px){
     .site-wrapper {
         max-width: 80vw;
-        box-shadow: 0 4px 2px -2px #0000003b;
+        box-shadow: 0 2px 4px 2px #00000025;
     }
 
-
-    .start-header {
+    .header-start {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(2, 1fr);
     
     }
     
-    .start-header__img--left {
+    .header-start__img--left {
         grid-column: 1/ span 6;
         grid-row: 1/ span 2;
     }
     
-    .start-header__img-right--brown {
+    .header-start__img-right--brown {
         background-color: rgb(158, 109, 82);
         grid-column: auto/ span 6;
         grid-row: 1/ span 1;
     }
     
-    .start-header__img-right--green {
+    .header-start__img-right--green {
         background-color: rgb(10, 132, 110);
         grid-column: auto/ span 6;
         grid-row: auto/ span 1;
@@ -39,16 +38,16 @@
         align-items: center;
         min-width: 100%;
         min-height: 3rem;
-        box-shadow: 3px 3px 5px #00000010;
+        box-shadow: 0 2px 4px 2px #0000002c;
     }
     
     .nav-bar__link {
         font-family: "Maven Pro", sans-serif;
-        text-decoration: none;
-        text-transform: uppercase;
         color: rgb(5, 86, 71);
+        text-transform: uppercase;
         font-optical-sizing: auto;
         font-weight: 550;
+        font-size: 1.5rem;
         font-style: normal;
         border-radius: 1rem;
         padding: .3rem 1rem .3rem 1rem;
@@ -56,71 +55,39 @@
 
     .nav-bar__link:hover {
         background-color: rgba(5, 86, 71, 0.333);
+
     }
 
 /* MAIN */
-    .main__heading2--section-one {
-        grid-column: 6/ span 4;
-        grid-row: auto;
-        justify-self: left;
+    .main__info-box--one {
+        flex-direction: row-reverse;
     }
     
-    .main__span--section-one{
-        grid-column: 6/ span 7;
-        grid-row: auto;
+    .main__info-box--three {
+        flex-direction: row;
+    }
+    
+    .main__heading2 {
+        align-self: flex-start;
+    }
 
+    .main__span {
         text-align: left;
     }
     
-    .button--cultivation-tip {
-        grid-column: 11/ span 2;
-        grid-row: auto;
-
-        font-size: 1rem;
-        font-weight: 700;
-        padding: 0.5rem 1.3rem 0.5rem 1.3rem;
-    }
-
-    .main__circle-image--section-one {
-        grid-column: 1/ span 5;
-        grid-row: 2/ span 4;
+    .main__circle-image {
+   /*      min-width: 40%; */
+        max-width: 60%;
     }
     
-    
-    .main-demarcation {
-        grid-column: 1/ span 12;
-        grid-row: 6;
-    }
 
-    /* SECTION TWO */
-    .heading-cultivation-plans {
-        grid-column: 1/span 12;
-        grid-row: auto;
-    }
-
+/* PART TWO */
     .card-vegetables {
         grid-column: auto/ span 4;
         grid-row: auto;
     }
 
-    /* SECTION THREE */
-    .main__heading2--section-three {
-        grid-column: 1/ span 5;
-        grid-row: auto;
-
-    }
-
-    .main__span--section-three{
-        grid-column: 1/ span 5;
-        grid-row: auto;
-    }
-
-    .main__circle-image--section-three {
-        grid-column: 7/ span 5;
-        grid-row: auto/ span 4;
-    }
-
-    /* FOOTER */
+/* FOOTER */
     .footer__start__image--mobile {
         display: none;
     }
@@ -129,6 +96,7 @@
         display: block;
         grid-row: 1/ span 2;
         grid-column: 1/ span 2;
+        min-width: 100%;
     }
 
     .footer__start__logo-container {
@@ -144,6 +112,5 @@
     .footer__start__text--big {
         align-self: center;
     }
-
 
 }

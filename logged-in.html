@@ -21,15 +21,90 @@
             <a href="" class="nav-bar__link">Planer</a>
             <a href="" class="nav-bar__link">Historik</a>
             <a href="" class="nav-bar__link">Tips</a>
-            <a href="" class="nav-bar__link">Logga ut</a>
+            <a href="./index.html" class="nav-bar__link">Logga ut</a>
         </nav>
         <header class="header header--my-pages">
-            <img src="img/hand-picking-tall.png" alt="" class="header-img header-img-mypages header-img-mypages--mobile">
+            <img src="img/hand-picking-square.png" alt="" class="header-img header-img-mypages header-img-mypages--mobile">
             <img src="img/hand-picking-wide.png" alt="" class="header-img header-img-mypages header-img-mypages--desktop">
             <img class="menu-bar" src="img/Vector (Stroke).png" alt="">
-            <img src="img/Logo.svg" alt="">
+            <img class="company-logo company-logo--my-pages" src="img/Logo.svg" alt="">
             <h1>Mina sidor</h1>
         </header>
+        <main class="main main--my-pages">
+            <article class="add-plant__container">
+                <h2 class="add-plant__heading">Lägg till ny plantering:</h2>
+                <form class="add-plant__form">
+                    <label for="plant-name">Planta:</label>
+                    <input class="add-plant__form__input" type="text" id="plant-name" name="plant-name">
+                    <label for="date">Datum:</label>
+                    <input class="add-plant__form__input" type="text" id="date" name="date">
+                    <input type="button" value="LÄGG TILL" class="button button--add-plant">
+                  </form>
+            </article>
+
+
+            <h3>Dina planerade planteringar</h3>
+            <article class="main__part-two">
+                <article class="card-vegetables">
+                    <section class="card-vegetables__img">
+                        <img src="img/tomato1.png" alt="Tomater">
+                        <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
+                    </section>
+                    <section class="card-vegetables__info-container">
+                        <span class="card-vegetables__vegetable">Tomat</span>
+                        <span class="card-vegetables__date">1 maj 2024</span>
+                        <span class="card-vegetables__name">Maria</span>
+                        <button class="card-vegetables__remove-button">Ta bort</button>
+                        <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
+                    </section>
+                </article>
+            </article>
+
+            <h3>Dina planterade planteringar</h3>
+            <article class="main__part-two">
+                <article class="card-vegetables">
+                    <section class="card-vegetables__img">
+                        <img src="img/tomato1.png" alt="Tomater">
+                        <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
+                    </section>
+                    <section class="card-vegetables__info-container">
+                        <span class="card-vegetables__vegetable">Tomat</span>
+                        <span class="card-vegetables__date">1 maj 2024</span>
+                        <span class="card-vegetables__name">Maria</span>
+                        <button class="card-vegetables__remove-button">Ta bort</button>
+                        <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
+                    </section>
+                </article>
+
+                <article class="card-vegetables">
+                    <section class="card-vegetables__img">
+                        <img src="img/turnips1.png" alt="Majrovor">
+                        <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
+                    </section>
+                    <section class="card-vegetables__info-container">
+                        <span class="card-vegetables__vegetable">Majrova</span>
+                        <span class="card-vegetables__date">12 april 2024</span>
+                        <span class="card-vegetables__name">Maria</span>
+                        <button class="card-vegetables__remove-button">Ta bort</button>
+                        <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
+                    </section>
+                </article>
+
+                <article class="card-vegetables">
+                    <section class="card-vegetables__img">
+                        <img src="img/peas1.png" alt="Majrovor">
+                        <img class="card-vegetables__logo" src="img/plant.svg" alt="Plant icon">
+                    </section>
+                    <section class="card-vegetables__info-container">
+                        <span class="card-vegetables__vegetable">Sockerärtor</span>
+                        <span class="card-vegetables__date">1 april 2024</span>
+                        <span class="card-vegetables__name">Maria</span>
+                        <button class="card-vegetables__remove-button">Ta bort</button>
+                        <img class="card-vegetables__remove-icon" src="img/bin.png" alt="bin">
+                    </section>
+                </article>
+            </article>
+        </main>
     </div>
     </body>
 </html>
