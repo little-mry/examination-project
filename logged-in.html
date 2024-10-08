@@ -39,7 +39,7 @@
                     <a href="#" class="dropdown-menu">Planer</a>
                     <a href="#" class="dropdown-menu">Historik</a>
                     <a href="#" class="dropdown-menu">Tips</a>
-                    <a href="#" class="dropdown-menu">Logga ut</a>
+                    <a href="./index.html" class="dropdown-menu">Logga ut</a>
                 </div>
             </span>
         </header>
@@ -48,10 +48,14 @@
             <article class="add-plant__container">
                 <h2 class="add-plant__heading">Lägg till ny plantering:</h2>
                 <form class="add-plant__form">
-                    <label for="plant-name">Planta:</label>
-                    <input class="add-plant__form__input" type="text" id="plant-name" name="plant-name">
-                    <label for="date">Datum:</label>
-                    <input class="add-plant__form__input" type="text" id="date" name="date">
+                    <div class="form__input-container">
+                        <label for="plant-name">Planta:</label>
+                        <input class="add-plant__form__input" type="text" id="plant-name" name="plant-name">
+                    </div>
+                    <div class="form__input-container">
+                        <label for="date">Datum:</label>
+                        <input class="add-plant__form__input" type="text" id="date" name="date">
+                    </div>
                     <input type="button" value="LÄGG TILL" class="button button--add-plant">
                   </form>
             </article>
