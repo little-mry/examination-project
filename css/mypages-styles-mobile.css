@@ -1,15 +1,45 @@
-.header--my-pages {
+
+.header__img-box--my-pages {
+    grid-column: 1/ span 12;
+    grid-row: 1/ span 1;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header__logo-box--my-pages {
+    grid-column: 1/ span 12;
+    grid-row: 1/ span 1;
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    overflow: hidden;
+}
+
+.header-img-mypages {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
 
 .company-logo--my-pages {
-    max-width: 60%;
+    width: 43%;
 }
 
-.header-img-mypages--mobile {
-    object-fit: contain;
+.heading-my-pages {
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
 }
+
+.dropdown-content {
+    z-index: 1;
+}
+
+
+
 .header-img-mypages--desktop {
     display: none;
 }

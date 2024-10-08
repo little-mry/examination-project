@@ -7,7 +7,7 @@
         display: block;
     }
 
-
+  
     .footer__my-pages {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;

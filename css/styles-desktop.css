@@ -10,23 +10,24 @@
     
     }
     
-    .header-start__img--left {
+    .header-start__box--left {
         grid-column: 1/ span 6;
         grid-row: 1/ span 2;
     }
     
-    .header-start__img-right--brown {
+    .header-start__box-right--brown {
         background-color: rgb(158, 109, 82);
         grid-column: auto/ span 6;
         grid-row: 1/ span 1;
     }
     
-    .header-start__img-right--green {
+    .header-start__box-right--green {
         background-color: rgb(10, 132, 110);
         grid-column: auto/ span 6;
         grid-row: auto/ span 1;
     }
-    
+
+/* NAVIGERING */
     .dropdown-nav {
         display: none;
     }
