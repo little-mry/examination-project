@@ -27,7 +27,7 @@
         grid-row: auto/ span 1;
     }
     
-    .menu-bar {
+    .dropdown-nav {
         display: none;
     }
     
@@ -112,5 +112,8 @@
     .footer__start__text--big {
         align-self: center;
     }
+
+
+    
 
 }

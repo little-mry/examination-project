@@ -1,13 +1,34 @@
 @media (min-width:768px) {
-
-    .header--my-pages {
-    }
-
     .header-img-mypages--mobile {
         display: none;
     }
 
     .header-img-mypages--desktop {
         display: block;
+    }
+
+
+    .footer__my-pages {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+    
+    .footer__image-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .footer__image--desktop {
+        display: block;
+        object-fit: cover;
+        min-height: 100%;
+        min-width: 100%;
+        opacity: 73%;
+    }
+    
+    .footer__image--mobile {
+        display: none;
     }
 }
