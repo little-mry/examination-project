@@ -110,4 +110,9 @@
   .footer__start__text--big {
     align-self: center;
   }
+
+  .footer__start__h2-container {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+  }
 }
